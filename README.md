@@ -1,4 +1,4 @@
-# Ansible Automation DEMO for DR
+# Ansible Automation Platform DEMO for DR
 
 This repository contains demo playbooks and roles used in our [Ansible Automation Workshops](https://github.com/ansible/workshops/).
 
