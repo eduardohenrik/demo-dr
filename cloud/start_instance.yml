@@ -7,10 +7,10 @@
 
   tasks:
   
-- name: Iniciando uma instancia especifica pelo ID
-  amazon.aws.ec2_instance:
-    state: "running"
-    instance_ids:
-      - "{{ instance_ids }}"
+  - name: Iniciando uma instancia especifica pelo ID
+    amazon.aws.ec2_instance:
+      state: "running"
+      instance_ids:
+        - "{{ instance_ids }}"
 
 
