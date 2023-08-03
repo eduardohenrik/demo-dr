@@ -1,6 +1,6 @@
 ---
 - name: Tasks 
-  hosts: aws_ec2
+  hosts: localhost
   gather_facts: no
   vars:
     instance_ids: undef
