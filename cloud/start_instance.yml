@@ -1,6 +1,6 @@
 ---
 - name: Tasks 
-  hosts: localhost
+  hosts: aws_ec2
   gather_facts: no
   vars:
     instance_ids: undef
@@ -9,6 +9,7 @@
   
   - name: Iniciando uma instancia especifica pelo ID
     amazon.aws.ec2_instance:
+      region: us-east-2
       state: "running"
       instance_ids:
         - "{{ instance_ids }}"
