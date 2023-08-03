@@ -1,0 +1,10 @@
+---
+- name: Checagem status da aplicacao 
+  uri:
+    url: "http://{{ ansible_host }}"
+    return_content: yes
+  register: webpage
+
+- name: Falahar caso o status da aplicacao nai esteja OK
+  fail:
+  when: "'Normal' not in webpage.content"
