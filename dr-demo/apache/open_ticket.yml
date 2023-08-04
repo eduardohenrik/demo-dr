@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: Abertura de Chamados Ferramenta Interna
+      debug:
+        msg: "Ticket aberto com sucesso."
