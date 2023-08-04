@@ -1,9 +1,8 @@
 <body>
 <h2>Esse é o status normal do serviço</h2>
 
-
 <h1> <p style="color:green">{{ normal_content }}</p></h1>
 
+<h2> <p style="color:red">Esse serviço está rodando em: {{ ansible_facts.fqdn }} </p> </h2>
 
-<h1> <p style="color:red">{{ ansible_hostname }}</p></h1>
 </body>
