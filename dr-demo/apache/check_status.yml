@@ -7,8 +7,8 @@
       debug:
         msg: 'Status: "{{ status }}"' 
  
-  - name: Falha se o status Datacenter nao esta OK
-    ansible.builtin.fail:
-      msg: O Datacenter primário está com status de falha.
-    when: dc_status != "OK"
+    - name: Falha se o status Datacenter nao esta OK
+      ansible.builtin.fail:
+        msg: O Datacenter primário está com status de falha.
+      when: dc_status != "OK"
 
