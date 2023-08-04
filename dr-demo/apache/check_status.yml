@@ -1,8 +1,8 @@
 ---
 - hosts: localhost
-  vars: status
-
+  vars:
+    status: undef
   tasks:
     - name: Checagem de status atual do Datacenter
       debug:
-        msg: 'Status: "{{ status.stdout }}" '
+        msg: 'Status: "{{ status }}" '
