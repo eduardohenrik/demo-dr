@@ -7,4 +7,4 @@
 
 - name: Falha se o status não esta normal
   fail:
-  when: "'Normal' not in webpage.content"
+  when: "'normal' not in webpage.content"
