@@ -2,13 +2,14 @@
 - hosts: localhost
   vars:
     dc_status: undef
+
   tasks:
     - name: Checagem de status atual do Datacenter
       debug:
-        msg: 'Status: "{{ status }}"' 
+        msg: 'Status: "{{ dc_status }}"' 
  
     - name: Falha se o status Datacenter nao esta OK
       ansible.builtin.fail:
         msg: O Datacenter primário falhou.
-      when: dc_status != '"OK"'
+      when: dc_status != "OK"
 
