@@ -1,8 +1,11 @@
 ---
 - hosts: localhost
+  gather_facts: no
+
   tasks:
-  - name: Power On
+  
+  - name: Power On virtual machine on Azure
     azure_rm_virtualmachine:
-      resource_group: openenv-67smw-2
-      name: SRVDEMO0001-AZURE
-      started: yes
+      resource_group: "openenv-67smw-2"
+      name: "SRVDEMO0001-AZURE"
+
