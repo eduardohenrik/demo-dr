@@ -1,7 +1,8 @@
 ---
 - hosts: localhost
+  vars: status
 
   tasks:
     - name: Checagem de status atual do Datacenter
       debug:
-        msg: "Status normal - operação OK"
+        msg: 'Status: "{{ status.stdout }}" '
