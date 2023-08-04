@@ -5,6 +5,6 @@
     return_content: yes
   register: webpage
 
-- name: Falaha se o status DR nao esta em uso
+- name: Falha se o status DR nao esta em uso
   fail:
   when: "'DR' not in webpage.content"
