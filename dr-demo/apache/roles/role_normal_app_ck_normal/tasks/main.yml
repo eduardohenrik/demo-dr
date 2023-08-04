@@ -1,10 +1,10 @@
 ---
 - name: Check web app for Normal State
   uri:
-    url: "http://{{ ansible_host }}"
+    url: "http://bastion.67smw.sandbox2961.opentlc.com:8080"
     return_content: yes
   register: webpage
 
-- name: Fail if Normal is not in the page content
+- name: Falha se o status não esta normal
   fail:
   when: "'Normal' not in webpage.content"
