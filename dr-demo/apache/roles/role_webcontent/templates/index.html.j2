@@ -1,7 +1,8 @@
-<html>
 <body>
-<h1>Apache is running fine</h1>
-<h1>This is survey field "First Line": {{ first_line }} </h1>
-<h1>This is survey field "Second Line": {{ second_line }}</h1>
+<h2>Esse é o status normal do serviço ✅✅✅ </h2>
+
+<h1> <p style="color:green">{{ normal_content }}</p></h1>
+
+<h2> <p style="color:green">Esse serviço está rodando em: {{ ansible_facts.fqdn }} </p> </h2>
+
 </body>
-</html>
