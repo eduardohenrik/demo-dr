@@ -1,8 +1,6 @@
 ---
 - name: Deploy Apache web content for DR demo
-  hosts: dc_destino
-  vars:
-    dc_destino: undef
+  hosts: SRVDEMO0001-AWS
 
   roles:
     - role_webcontent_dr
