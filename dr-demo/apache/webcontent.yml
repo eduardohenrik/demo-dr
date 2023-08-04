@@ -1,6 +1,6 @@
 ---
 - name: Deploy Apache web content
-  hosts: web
+  hosts: SRVDEMO0001-AWS
 
   roles:
     - role_webcontent
