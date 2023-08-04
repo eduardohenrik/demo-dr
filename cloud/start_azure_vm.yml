@@ -1,11 +1,13 @@
 ---
-- hosts: localhost
+- name: Tasks 
+  hosts: localhost
   gather_facts: no
 
   tasks:
   
   - name: Power On
-    azure_rm_virtualmachine:
+    azure.azcollection.azure_rm_virtualmachine:
       resource_group: openenv-67smw-2
       name: "SRVDEMO0001-AZURE"
+    
 
