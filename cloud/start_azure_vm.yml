@@ -1,6 +1,7 @@
 ---
 - name: Tasks
   hosts: localhost
+  connection: local
   gather_facts: no
   
   tasks:
