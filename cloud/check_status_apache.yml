@@ -5,6 +5,6 @@
     return_content: yes
   register: webpage
 
-- name: Falahar caso o status da aplicacao nai esteja OK
+- name: Falha caso o status da aplicacao nao esteja OK
   fail:
   when: "'Normal' not in webpage.content"
