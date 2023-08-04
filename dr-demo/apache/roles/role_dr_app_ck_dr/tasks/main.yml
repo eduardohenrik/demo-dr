@@ -1,10 +1,10 @@
 ---
 - name: Check web app for DR State
   uri:
-    url: "http://{{ ansible_host }}"
+    url: "http://bastion.67smw.sandbox2961.opentlc.com:8080"
     return_content: yes
   register: webpage
 
-- name: Fail if DR is not in the page content
+- name: Falaha se o status DR nao esta em uso
   fail:
   when: "'DR' not in webpage.content"
