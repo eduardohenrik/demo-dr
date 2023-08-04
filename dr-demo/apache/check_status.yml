@@ -5,7 +5,7 @@
   tasks:
     - name: Checagem de status atual do Datacenter
       debug:
-        msg: Status: "{{ status }}" 
+        msg: 'Status: "{{ status }}"' 
  
     - name: Falha se o status Datacenter nao esta OK
       fail:
