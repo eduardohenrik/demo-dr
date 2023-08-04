@@ -9,4 +9,4 @@
  
     - name: Falha se o status Datacenter nao esta OK
       fail:
-      when: "'OK' not in status.content"
+      when: "OK not in status.content"
