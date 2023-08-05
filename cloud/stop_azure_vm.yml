@@ -1,9 +1,11 @@
 ---
 - name: Tasks
   hosts: localhost
+  collections:
+    - azure.azcollection
   connection: local
   gather_facts: no
-  
+
   tasks:
   
   - name: Power On
