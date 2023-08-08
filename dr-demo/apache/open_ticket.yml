@@ -3,6 +3,6 @@
   gather_facts: no
 
   tasks:
-    - name: Abertura de Chamados Ferramenta Interna
+    - name: Abertura de ticket 
       debug:
         msg: "Ticket aberto com sucesso."
