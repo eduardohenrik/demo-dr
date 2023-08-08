@@ -1,6 +1,6 @@
 ---
 - name: Deploy Apache web content for DR demo
-  hosts: SRVDEMO0001-AWS
+  hosts: SRVDEMO0001-AZURE
 
   roles:
     - role_webcontent_dr
