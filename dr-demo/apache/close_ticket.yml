@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  gather_facts: no
+
+  tasks:
+    - name: Fechamento do ticket 
+      debug:
+        msg: "Ticket fechado com sucesso."
