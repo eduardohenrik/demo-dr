@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  gather_facts: no
+
+  tasks:
+    - name: Atualização do chamado
+      debug:
+        msg: "Ticket atualizado com sucesso."
