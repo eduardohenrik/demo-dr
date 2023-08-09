@@ -1,7 +1,7 @@
 ---
 - name: Check web app for DR State
   uri:
-    url: "http://bastion.67smw.sandbox2961.opentlc.com:8080"
+    url: "http://20.228.154.228"
     return_content: yes
   register: webpage
 
