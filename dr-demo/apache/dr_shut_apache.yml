@@ -1,6 +1,6 @@
 ---
 - name: Shutdown Apache 
-  hosts: web
+  hosts: cloud_aws
 
   roles:
     - role_dr_shut_apache
