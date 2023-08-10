@@ -6,7 +6,7 @@
 
   tasks:
   
-  - name: Power On
+  - name: Power Off vm on Azure 
     azure.azcollection.azure_rm_virtualmachine:
       resource_group: openenv-v98rk-2
       name: SRVDEMO0001-AZURE
