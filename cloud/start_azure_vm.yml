@@ -8,6 +8,6 @@
   
   - name: Power On
     azure.azcollection.azure_rm_virtualmachine:
-      resource_group: openenv-67smw-2
+      resource_group: openenv-v98rk-2
       name: SRVDEMO0001-AZURE
       started: true
