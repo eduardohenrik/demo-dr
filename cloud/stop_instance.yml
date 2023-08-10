@@ -7,7 +7,7 @@
 
   tasks:
   
-  - name: Iniciando uma instancia especifica pelo ID
+  - name: Parando uma instancia especifica pelo ID
     amazon.aws.ec2_instance:
       region: us-east-2
       state: "stopped"
