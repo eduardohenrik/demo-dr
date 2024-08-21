@@ -7,9 +7,5 @@
     - name: Checagem de status atual do Datacenter
       debug:
         msg: 'Status: "{{ dc_status }}"' 
- 
-    - name: Falha se o status Datacenter nao esta OK
-      ansible.builtin.fail:
-        msg: O Datacenter primário falhou.
-      when: dc_status != "NOK"
+
 
